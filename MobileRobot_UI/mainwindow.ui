@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1203</width>
+    <height>693</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EEPIS Robot Soccer Wheels (ERSOW SSL) Simulator UI</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>681</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout1"/>
+   </widget>
+   <widget class="QLineEdit" name="Edit_RobotInitPosX">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>495</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_RobotInitPosY">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>520</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>500</y>
+      <width>36</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pos X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>525</y>
+      <width>36</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pos Y</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>470</y>
+      <width>116</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Robot Position</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>525</y>
+      <width>36</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pos Y</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>470</y>
+      <width>116</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Robot Position</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_TargetInitPosY">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>520</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>500</y>
+      <width>36</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pos X</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_TargetInitPosX">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>495</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>565</y>
+      <width>52</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Obstacle</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_Obstacle">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>560</y>
+      <width>41</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>590</y>
+      <width>52</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Node</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_Node">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>585</y>
+      <width>41</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>555</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Max Iteration</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_Iteration">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>570</y>
+      <width>101</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_InitResult">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>595</y>
+      <width>116</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Node : 0 - Obs : 0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_GenerateData">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>615</y>
+      <width>236</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate Data</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>450</y>
+      <width>256</width>
+      <height>196</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Initialize Data</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="List_viaPoint">
+    <property name="geometry">
+     <rect>
+      <x>285</x>
+      <y>475</y>
+      <width>191</width>
+      <height>146</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>450</y>
+      <width>211</width>
+      <height>196</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>ViaPoint Result</string>
+    </property>
+    <widget class="QLabel" name="Label_ViaPointTime">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>175</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Time : 0 s</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>0</y>
+       <width>196</width>
+       <height>196</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>ViaPoint Result</string>
+     </property>
+     <widget class="QLabel" name="Label_ViaPointTime_2">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>175</y>
+        <width>176</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Time : 0 s</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>505</x>
+      <y>485</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gen Number</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>505</x>
+      <y>510</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Population</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>505</x>
+      <y>535</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CrossOver Rate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>505</x>
+      <y>560</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mutation Rate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>505</x>
+      <y>585</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generation</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_GA_Gen">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>480</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_GA_Population">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>505</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_GA_CO_Rate">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>530</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_GA_MU_Rate">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>555</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_GA_Generation">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>580</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>450</y>
+      <width>196</width>
+      <height>196</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Genetic Algorithm Initialize</string>
+    </property>
+    <widget class="QPushButton" name="Button_GA_Process">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>165</y>
+       <width>176</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>GA Process</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QListWidget" name="List_InitPopulation">
+    <property name="geometry">
+     <rect>
+      <x>705</x>
+      <y>30</y>
+      <width>226</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>5</y>
+      <width>236</width>
+      <height>216</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Init Population</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="List_Fitness">
+    <property name="geometry">
+     <rect>
+      <x>705</x>
+      <y>250</y>
+      <width>226</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_8">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>225</y>
+      <width>236</width>
+      <height>216</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Fitness</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="List_Selection">
+    <property name="geometry">
+     <rect>
+      <x>945</x>
+      <y>30</y>
+      <width>226</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_10">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>5</y>
+      <width>236</width>
+      <height>216</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Selection</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_9">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>225</y>
+      <width>236</width>
+      <height>216</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>CrossOver</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="List_CrossOver">
+    <property name="geometry">
+     <rect>
+      <x>945</x>
+      <y>250</y>
+      <width>226</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_11">
+    <property name="geometry">
+     <rect>
+      <x>935</x>
+      <y>450</y>
+      <width>241</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Mutation</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="List_Mutation">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>475</y>
+      <width>231</width>
+      <height>166</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_Delay">
+    <property name="geometry">
+     <rect>
+      <x>705</x>
+      <y>470</y>
+      <width>126</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GA Process Delay</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Edit_GA_Delay">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>470</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_Result_Jalur">
+    <property name="geometry">
+     <rect>
+      <x>705</x>
+      <y>500</y>
+      <width>216</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Jalur Terbaik : 0 px</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_Result_Generasi">
+    <property name="geometry">
+     <rect>
+      <x>705</x>
+      <y>520</y>
+      <width>216</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dicapai Pada Generasi ke - 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label_Result_Time">
+    <property name="geometry">
+     <rect>
+      <x>705</x>
+      <y>540</y>
+      <width>216</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Execution Time : 0 s</string>
+    </property>
+   </widget>
+   <zorder>groupBox_9</zorder>
+   <zorder>groupBox_10</zorder>
+   <zorder>groupBox_8</zorder>
+   <zorder>groupBox_7</zorder>
+   <zorder>groupBox_6</zorder>
+   <zorder>groupBox_4</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>groupBox_3</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>Edit_RobotInitPosX</zorder>
+   <zorder>Edit_RobotInitPosY</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>Edit_TargetInitPosY</zorder>
+   <zorder>label_4</zorder>
+   <zorder>Edit_TargetInitPosX</zorder>
+   <zorder>label_5</zorder>
+   <zorder>spinBox_Obstacle</zorder>
+   <zorder>label_6</zorder>
+   <zorder>spinBox_Node</zorder>
+   <zorder>label_7</zorder>
+   <zorder>Edit_Iteration</zorder>
+   <zorder>Label_InitResult</zorder>
+   <zorder>Button_GenerateData</zorder>
+   <zorder>List_viaPoint</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_12</zorder>
+   <zorder>Edit_GA_Gen</zorder>
+   <zorder>Edit_GA_Population</zorder>
+   <zorder>Edit_GA_CO_Rate</zorder>
+   <zorder>Edit_GA_MU_Rate</zorder>
+   <zorder>Edit_GA_Generation</zorder>
+   <zorder>List_InitPopulation</zorder>
+   <zorder>List_Fitness</zorder>
+   <zorder>List_Selection</zorder>
+   <zorder>List_CrossOver</zorder>
+   <zorder>groupBox_11</zorder>
+   <zorder>List_Mutation</zorder>
+   <zorder>checkBox_Delay</zorder>
+   <zorder>Edit_GA_Delay</zorder>
+   <zorder>Label_Result_Jalur</zorder>
+   <zorder>Label_Result_Generasi</zorder>
+   <zorder>Label_Result_Time</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1203</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::QuitRole</enum>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
